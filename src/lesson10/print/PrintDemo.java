@@ -1,8 +1,6 @@
 package lesson10.print;
 
-/**
- * Created by student on 17.05.2017.
- */
+
 public class PrintDemo {
     public static void main(String[] args) {
         Printable[] typo = new Printable[6];

@@ -31,12 +31,12 @@ public class ReaderMain2 {
         System.out.println("Дата рождения: " + st2.getDate() + "; номер телефона: " + st2.getPhone());
         System.out.println();
 
-        st1.takebook("Мизери");
-        st2.takebook("Ангелы и демоны", "Буратино");
+        st1.takeBook("Мизери");
+        st2.takeBook("Ангелы и демоны", "Буратино");
         System.out.println();
 
-        st1.returnbook("Код да-винчи");
-        st2.returnbook("Игра престолов", "Властелин колец");
+        st1.returnBook("Код да-винчи");
+        st2.returnBook("Игра престолов", "Властелин колец");
         System.out.println();
 
         st1.takeBook(book1, book2, book3);

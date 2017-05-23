@@ -1,4 +1,4 @@
-package zzz;
+package lesson11;
 
 import javax.xml.bind.SchemaOutputResolver;
 
@@ -29,14 +29,24 @@ public class SeasonDemo {
         System.out.println();
 
         for (Season c : Season.values()) {
-            System.out.println(c.ordinal() + " " + c + " " +  c.getTemp());
+            System.out.println(c.ordinal() + " " + c + " " + c.getTemp());
             c.getDescription();
         }
         System.out.println();
 
         season = Season.valueOf("WINTER");
         System.out.println(season);
+
+        System.out.println("Любимое время года: ");
+        printSeason(Season.valueOf("SUMMER"));
     }
+
+    public static void printSeason(Season season) {
+        System.out.println(season);
+        season.getDescription();
+    }
+
+
 }
 
 

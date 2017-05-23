@@ -26,9 +26,9 @@ public class ReaderMain {
         System.out.println("Студент " + st2.getName() + " с чит. билетом номер " + st2.getNumber() + " который учится на факультете " + st2.getFacult() + " зарегистрирован");
         System.out.println("Дата рождения: " + st2.getDate() + "; номер телефона: " + st2.getPhone());
 
-        st1.takebook("Мизери");
+        st1.takeBook("Мизери");
 
-        st1.returnbook("Код да-винчи");
+        st1.returnBook("Код да-винчи");
 
         st1.info();
         st2.info();

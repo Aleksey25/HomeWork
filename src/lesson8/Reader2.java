@@ -52,19 +52,19 @@ public class Reader2 {
         return facult;
     }
 
-    public void takebook(String book) {
+    public void takeBook(String book) {
         System.out.println("Студент " + name + " взял книгу " + book);
     }
 
-    public void takebook(String... book) {
+    public void takeBook(String... book) {
         System.out.println("Студент " + name + " взял книги: " + Arrays.toString(book));
     }
 
-    public void returnbook(String book) {
+    public void returnBook(String book) {
         System.out.println("Студент " + name + " вернул книгу " + book);
     }
 
-    public void returnbook(String... book) {
+    public void returnBook(String... book) {
         System.out.println("Студент " + name + " вернул книги: " + Arrays.toString(book));
     }
 

@@ -9,6 +9,11 @@ public class Horse extends Animal {
         this.color = color;
     }
 
+    @Override
+    public void sleep() {
+        System.out.println("Horse спит: " + SLEEP_TIME + " часов");
+    }
+
     public String getColor() {
         return color;
     }

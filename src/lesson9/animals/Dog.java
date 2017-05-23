@@ -10,6 +10,12 @@ public class Dog extends Animal {
         this.kind = kind;
     }
 
+    @Override
+    public void sleep() {
+        System.out.println("Dog спит: " + SLEEP_TIME + " часов");
+    }
+
+
     public String getKind() {
         return kind;
     }

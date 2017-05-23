@@ -18,32 +18,21 @@ public class Animal {
         this.noise = noise;
     }
 
-    public void sleep(Animal animals) {
-        int time;
-        if (animals.animalType.equals("Dog")) {
-            time = Dog.getSleepTime();
-            System.out.println("Животное " + animals.animalType + " спит: " + time + " часов");
-        } else if (animals.animalType.equals("Cat")) {
-            time = Cat.getSleepTime();
-            System.out.println("Животное " + animals.animalType + " спит: " + time + " часов");
-        } else if (animals.animalType.equals("Horse")) {
-            time = Horse.getSleepTime();
-            System.out.println("Животное " + animals.animalType + " спит: " + time + " часов");
-        }
+    public void sleep() {
     }
 
-    public void makeNoise(Animal animals) {
-        System.out.println(animals.animalType + "  " + noise);
+    public void makeNoise() {
+        System.out.println(animalType + " makes noise " + noise );
     }
 
-    public void eat(Animal animals) {
-        System.out.println(animals.animalType + " is eating " + food);
+    public void eat() {
+        System.out.println(animalType + " eats " + food );
     }
 
     public void info() {
-        System.out.println("Животное " + animalType);
-        System.out.println("ест " + food);
-        System.out.println("живет в " + location);
+        System.out.println("Animal: " + animalType);
+        System.out.println("eats " + food);
+        System.out.println("lives in " + location);
     }
 
     public String getAnimalType() {

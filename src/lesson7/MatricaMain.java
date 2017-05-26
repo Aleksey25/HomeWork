@@ -21,11 +21,11 @@ public class MatricaMain {
         int k = sc.nextInt();
         switch (k) {
             case 1:
-                mat1.print(mat1.umnog(mat1));
+                mat1.umnog(mat1);
                 break;
             case 2:
-                mat1 = mat1.summ(mat2);
-                mat1.print(mat1);
+                mat1.summ(mat2);
+
                 break;
             default:
                 mat1.print(mat1);

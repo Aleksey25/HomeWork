@@ -15,6 +15,14 @@ public class Matrica {
         this.column = column;
     }
 
+    public int[][] getMatrica(int i, int i1) {
+        return matrica;
+    }
+
+    public void setMatrica(int[][] matrica) {
+        this.matrica = matrica;
+    }
+
     public void setElement(int line, int column, int value) {
         matrica[line][column] = value;
     }
@@ -32,7 +40,7 @@ public class Matrica {
         }
     }
 
-    public Matrica umnog(Matrica matrica) {
+    public void umnog(Matrica matrica) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите целое число на которое необходимо умножить матрицу");
         int x = 0;
@@ -43,18 +51,30 @@ public class Matrica {
             System.exit(0);
         }
         for (int i = 0; i < line; i++) {
-            for (int j = 0; j < column; j++)
-                matrica.setElement(i, j, matrica.matricaGetElement(i, j) * x);
+            for (i = 0; i < line; i++) {
+                for (int j = 0; j < column; j++)
+                    this.matrica[i][j] = this.matrica[i][j] * x;
+            }
+            for (i = 0; i < line; i++) {
+                for (int j = 0; j < column; j++) {
+                    System.out.print(this.matrica[i][j] + " ");
+                }
+                System.out.println();
+            }
         }
-        return matrica;
     }
 
-    public Matrica summ(Matrica matrica) {
+    public void summ(Matrica matrica) {
         for (int i = 0; i < line; i++) {
             for (int j = 0; j < column; j++)
-                matrica.setElement(i, j, matrica.matricaGetElement(i, j) + this.matricaGetElement(i, j));
+                this.matrica[i][j] = this.matrica[i][j] + matrica.matrica[i][j];
         }
-        return matrica;
+        for (int i = 0; i < line; i++) {
+            for (int j = 0; j < column; j++) {
+                System.out.print(this.matrica[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 
     public void print(Matrica matrix) {

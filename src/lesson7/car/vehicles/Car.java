@@ -81,8 +81,8 @@ public class Car {
         System.out.println("Название автомобиля: " + name);
         System.out.println("Тип автомобиля: " + type);
         System.out.println("Масса автомобиля: " + weight);
-        System.out.println("Водитель: " + driver.getName() + " со стажем вождения " + driver.experience + " лет(года)");
-        System.out.println("Двигатель: " + engine.maker + " мощностью " + engine.power + " л.с");
+        System.out.println("Водитель: " + driver.getName() + " со стажем вождения " + driver.getExperience() + " лет(года)");
+        System.out.println("Двигатель: " + engine.getMaker() + " мощностью " + engine.getPower() + " л.с");
     }
 
     @Override

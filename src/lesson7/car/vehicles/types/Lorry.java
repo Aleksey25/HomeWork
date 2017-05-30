@@ -45,6 +45,6 @@ public class Lorry extends Car {
     public String toString() {
         return "Lorry{" +
                 "carrying=" + carrying +
-                '}';
+                "} " + super.toString();
     }
 }

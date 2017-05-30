@@ -44,6 +44,6 @@ public class SportCar extends Car {
     public String toString() {
         return "SportCar{" +
                 "topSpeed=" + topSpeed +
-                '}';
+                "} " + super.toString();
     }
 }

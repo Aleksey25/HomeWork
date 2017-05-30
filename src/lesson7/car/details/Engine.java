@@ -1,8 +1,8 @@
 package lesson7.car.details;
 
 public class Engine {
-    public String maker;
-    public int power;
+    private String maker;
+    private int power;
 
     public Engine(String maker, int power) {
         this.maker = maker;

@@ -4,7 +4,7 @@ package lesson7.car.professions;
 import lesson7.Person;
 
 public class Driver extends Person {
-    public int experience;
+    private int experience;
 
     public Driver(String name, int age, int experience) {
         super(name, age);

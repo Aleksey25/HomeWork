@@ -14,7 +14,7 @@ public class SportCar extends Car {
 
     public void printSport() {
         printInfo();
-        System.out.println("Максимальная скорость: " + topSpeed + " км/ч");
+       // System.out.println("Максимальная скорость: " + topSpeed + " км/ч");
     }
 
     public int getTopSpeed() {
@@ -43,7 +43,7 @@ public class SportCar extends Car {
     @Override
     public String toString() {
         return "SportCar{" +
-                "topSpeed=" + topSpeed +
-                "} " + super.toString();
+                "topSpeed= " + topSpeed +
+                " км/ч} " + super.toString();
     }
 }

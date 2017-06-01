@@ -38,5 +38,6 @@ public class CarMain {
         System.out.println();
         gr1.printLorry();
         System.out.println();
+
     }
 }

@@ -78,12 +78,8 @@ public class Car {
     }
 
     public void printInfo() {
-        System.out.println("Название автомобиля: " + name);
-        System.out.println("Тип автомобиля: " + type);
-        System.out.println("Масса автомобиля: " + weight);
-        System.out.println("Водитель: " + driver.getName() + " со стажем вождения " + driver.getExperience() + " лет(года)");
-        System.out.println("Двигатель: " + engine.getMaker() + " мощностью " + engine.getPower() + " л.с");
-    }
+        System.out.println(toString());
+         }
 
     @Override
     public boolean equals(Object o) {

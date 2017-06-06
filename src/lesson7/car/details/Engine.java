@@ -45,9 +45,8 @@ public class Engine {
 
     @Override
     public String toString() {
-        return "Engine{" +
-                "maker='" + maker + '\'' +
-                ", power=" + power +
-                '}';
+        return " " +
+                "производитель: '" + maker + '\'' +
+                ", мощность: " + power;
     }
 }

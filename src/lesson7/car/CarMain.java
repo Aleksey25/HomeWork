@@ -32,11 +32,11 @@ public class CarMain {
         gr1.turnRight();
         System.out.println();
 
-        car1.printInfo();
+        System.out.println(car1);
         System.out.println();
-        sp1.printSport();
+        System.out.println(sp1);
         System.out.println();
-        gr1.printLorry();
+        System.out.println(gr1);
         System.out.println();
 
     }

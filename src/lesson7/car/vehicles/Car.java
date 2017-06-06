@@ -78,8 +78,8 @@ public class Car {
     }
 
     public void printInfo() {
-        System.out.println(toString());
-         }
+        System.out.println(this);
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -107,12 +107,11 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
-                "name='" + name + '\'' +
-                ", type='" + type + '\'' +
-                ", weight=" + weight +
-                ", driver=" + driver +
-                ", engine=" + engine +
+        return "Название:'" + name + '\'' +
+                ", тип авто:'" + type + '\'' +
+                ", масса: " + weight + " кг " +
+                ", водитель: " + driver +
+                ", двигатель: " + engine +
                 '}';
     }
 }

@@ -42,8 +42,8 @@ public class SportCar extends Car {
 
     @Override
     public String toString() {
-        return "SportCar{" +
-                "topSpeed= " + topSpeed +
-                " км/ч} " + super.toString();
+        return "SportCar {" +
+                "Максимальная скорость " + topSpeed +
+                " км/ч " + super.toString();
     }
 }

@@ -39,9 +39,8 @@ public class Driver extends Person {
 
     @Override
     public String toString() {
-        return "Driver{" +
-                "experience=" + experience +
-                '}';
+        return "" +
+                "Опыт вождения: " + experience + " года (лет)";
     }
 
 }

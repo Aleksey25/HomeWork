@@ -15,7 +15,7 @@ public class Lorry extends Car {
 
     public void printLorry() {
         printInfo();
-       // System.out.println("Грузоподъемность: " + carrying + " кг");
+        // System.out.println("Грузоподъемность: " + carrying + " кг");
     }
 
     public int getCarrying() {
@@ -43,8 +43,8 @@ public class Lorry extends Car {
 
     @Override
     public String toString() {
-        return "Lorry{" +
-                "carrying= " + carrying +
-                " кг} " + super.toString();
+        return "Грузовик: {" +
+                "грузоподъемность " + carrying +
+                " кг " + super.toString();
     }
 }

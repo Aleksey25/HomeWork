@@ -11,7 +11,7 @@ public class DiffSimb {
         Matcher m = Pattern.compile(regexp).matcher(text);
         while (m.find()) {
             Word currentWord = new Word(text.substring(m.start(), m.end()));
-            if (currentWord.getUniqueSymb() < result.getUniqueSymb()) {
+            if (currentWord.getUniqueSymb() > result.getUniqueSymb()) {
                 result = currentWord;
             }
         }

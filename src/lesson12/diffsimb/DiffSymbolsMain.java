@@ -11,8 +11,9 @@ public class DiffSymbolsMain {
         EnSimb searcher2 = new EnSimb();
         System.out.println(text);
 
-        System.out.print("Первое слово с мимнмальным кол-вом символов: ");
-        System.out.println(searcher1.search(text, "[a-zA-Z0-9-wА-Яа-яЁё]+"));
+        System.out.print("Первое слово с максимальным кол-вом символов: ");
+        System.out.println(searcher1.search(text, "[a-zA-Z0-9-w_]+"));
+        System.out.println();
 
         System.out.println("Слова содержащие только символы латинского алфавита: ");
         System.out.println(searcher2.enSearch(text, "[a-zA-Z]+"));

@@ -14,8 +14,8 @@ public class Word {
 
     private int uniqueSymbCount(String word) {
         int count = word.length();
-        for (int i = 0; i < word.length() - 1; i++) {
-            for (int j = i + 1; j < word.length(); j++) {
+        for (int i = 0; i < word.length(); i++) {
+            for (int j = i + 1; j < word.length() - 1; j++) {
                 if (word.charAt(i) == word.charAt(j)) {
                     count--;
                     break;

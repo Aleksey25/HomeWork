@@ -13,10 +13,6 @@ public class Lorry extends Car {
         this.carrying = carrying;
     }
 
-    public void printLorry() {
-        printInfo();
-        // System.out.println("Грузоподъемность: " + carrying + " кг");
-    }
 
     public int getCarrying() {
         return carrying;

@@ -77,9 +77,6 @@ public class Car {
         System.out.println("Автомобиль " + name + " поворачивает направо");
     }
 
-    public void printInfo() {
-        System.out.println(this);
-    }
 
     @Override
     public boolean equals(Object o) {

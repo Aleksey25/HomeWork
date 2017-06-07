@@ -12,11 +12,6 @@ public class SportCar extends Car {
         this.topSpeed = topSpeed;
     }
 
-    public void printSport() {
-        printInfo();
-       // System.out.println("Максимальная скорость: " + topSpeed + " км/ч");
-    }
-
     public int getTopSpeed() {
         return topSpeed;
     }

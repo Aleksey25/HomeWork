@@ -12,12 +12,12 @@ public class Tshort extends Clothing implements MensClothing, WomenClothing {
 
     @Override
     public void dressMan() {
-
+        System.out.println("Футболка");
     }
 
     @Override
     public void dressWoman() {
-
+        System.out.println("Футболка");
     }
 
     @Override

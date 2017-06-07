@@ -10,7 +10,7 @@ public class Skirt extends Clothing implements WomenClothing {
 
     @Override
     public void dressWoman() {
-
+        System.out.println("Юбка");
     }
 
     @Override

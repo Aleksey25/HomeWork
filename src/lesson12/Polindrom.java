@@ -15,7 +15,7 @@ public class Polindrom {
 
         for (StringBuilder c : sb) {
             if (c == c.reverse()) {
-                System.out.println(c);
+                System.out.println(c + " - полиндром");
             }
         }
     }

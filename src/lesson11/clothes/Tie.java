@@ -10,7 +10,7 @@ public class Tie extends Clothing implements MensClothing {
 
     @Override
     public void dressMan() {
-
+        System.out.println("Галстук");
     }
 
     @Override

@@ -2,7 +2,7 @@ package lesson7;
 
 import java.util.Arrays;
 import java.util.Random;
-import java.util.Scanner;
+
 
 public class Matrica {
     private int matrica[][] = new int[3][3];
@@ -15,7 +15,7 @@ public class Matrica {
         this.column = column;
     }
 
-    public int[][] getMatrica(int i, int i1) {
+    public int[][] getMatrica(int i, int j) {
         return matrica;
     }
 
@@ -40,16 +40,8 @@ public class Matrica {
         }
     }
 
-    public void umnog(Matrica matrica) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Введите целое число на которое необходимо умножить матрицу");
-        int x = 0;
-        if (sc.hasNextInt()) {
-            x = sc.nextInt();
-        } else {
-            System.out.println("Вы ввели не целое число");
-            System.exit(0);
-        }
+    public void umnog(int x) {
+
         for (int i = 0; i < line; i++) {
             for (i = 0; i < line; i++) {
                 for (int j = 0; j < column; j++)
@@ -77,7 +69,7 @@ public class Matrica {
         }
     }
 
-    public void print(Matrica matrix) {
+    public void print() {
         for (int i = 0; i < line; i++) {
             for (int j = 0; j < column; j++) {
                 System.out.print(this.matrica[i][j] + " ");

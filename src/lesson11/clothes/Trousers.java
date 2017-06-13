@@ -36,13 +36,13 @@ public class Trousers extends Clothing implements MensClothing, WomenClothing {
 
     @Override
     public void dressMan() {
-        System.out.println("Брюки");
+        System.out.println(" Брюки");
 
     }
 
     @Override
     public void dressWoman() {
-        System.out.println("Брюки");
+        System.out.println(" Брюки");
     }
 
     @Override

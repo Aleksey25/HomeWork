@@ -11,7 +11,7 @@ public class Calculiator {
     }
 
     public static <T extends Number, V extends Number> void minus(T a, V b) {
-        double c = a.doubleValue() + b.doubleValue();
+        double c = a.doubleValue() - b.doubleValue();
         System.out.println("разность чисел " + a + " и " + b + " = " + c);
     }
 

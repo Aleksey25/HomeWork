@@ -8,20 +8,17 @@ public class Trousers extends Clothing implements MensClothing, WomenClothing {
         super(size, cost, color);
     }
 
+
     @Override
-    public Sizes getSize() {
-        return super.getSize();
+    public void dressWoman() {
+        System.out.println(" Брюки");
     }
 
     @Override
-    public int getCost() {
-        return super.getCost();
+    public void dressMan() {
+        System.out.println(" Брюки");
     }
 
-    @Override
-    public String getColor() {
-        return super.getColor();
-    }
 
     @Override
     public boolean equals(Object o) {
@@ -33,17 +30,6 @@ public class Trousers extends Clothing implements MensClothing, WomenClothing {
         return super.hashCode();
     }
 
-
-    @Override
-    public void dressMan() {
-        System.out.println(" Брюки");
-
-    }
-
-    @Override
-    public void dressWoman() {
-        System.out.println(" Брюки");
-    }
 
     @Override
     public String toString() {

@@ -4,11 +4,8 @@ package lesson8.flowers;
  * Created by home pc on 10.06.2017.
  */
 public class Tulip extends Flower {
-    String color;
-
     public Tulip(String name, int cost, String color) {
-        super(name, cost);
-        this.color = color;
+        super(name, cost, color);
     }
 
     @Override
@@ -17,36 +14,8 @@ public class Tulip extends Flower {
         return total;
     }
 
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        if (!super.equals(o)) return false;
-
-        Tulip tulip = (Tulip) o;
-
-        return color != null ? color.equals(tulip.color) : tulip.color == null;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = super.hashCode();
-        result = 31 * result + (color != null ? color.hashCode() : 0);
-        return result;
-    }
-
     @Override
     public String toString() {
-        return "Tulip{" +
-                "color='" + color + '\'' +
-                "} " + super.toString();
+        return "Tulip{} " + super.toString();
     }
 }

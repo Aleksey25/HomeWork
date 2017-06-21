@@ -18,7 +18,7 @@ public class ArrList {
         arrayList.add(new Circle(321));
 
         for (Circle x : arrayList) {
-            System.out.println(x.toString());
+            System.out.println(x);
         }
     }
 }

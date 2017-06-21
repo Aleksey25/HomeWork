@@ -1,27 +1,16 @@
-package lesson8.flowers;
+package lesson15.toy;
 
 /**
- * Created by belkin on 08.06.2017.
+ * Created by belkin on 13.06.2017.
  */
-public abstract class Flower {
+public class Toy {
     private String name;
     private int cost;
-    private static int count;
-    private String color;
 
-    public Flower(String name, int cost, String color) {
+    public Toy(String name, int cost) {
         this.name = name;
         this.cost = cost;
-        this.color = color;
-        count++;
     }
-
-    public abstract int bouquet (int total);
-
-    public static int getCount() {
-        return count;
-    }
-
 
     public String getName() {
         return name;
@@ -39,28 +28,15 @@ public abstract class Flower {
         this.cost = cost;
     }
 
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    protected void finalize() {
-        System.out.println("In finalize");
-        count--;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Flower flower = (Flower) o;
+        Toy toy = (Toy) o;
 
-        if (cost != flower.cost) return false;
-        return name != null ? name.equals(flower.name) : flower.name == null;
+        if (cost != toy.cost) return false;
+        return name != null ? name.equals(toy.name) : toy.name == null;
     }
 
     @Override
@@ -72,10 +48,9 @@ public abstract class Flower {
 
     @Override
     public String toString() {
-        return "Flower{" +
+        return "Toy{" +
                 "name='" + name + '\'' +
                 ", cost=" + cost +
                 '}';
     }
-
 }

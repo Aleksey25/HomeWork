@@ -45,6 +45,6 @@ public class FlowerMain {
         }
         System.out.println("Стоимость букета 3: " + summ);
 
-        System.out.println("Всего продано цветов: " + Flower.getcount());
+        System.out.println("Всего продано цветов: " + Flower.getCount());
     }
 }

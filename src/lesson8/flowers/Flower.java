@@ -16,7 +16,6 @@ public abstract class Flower {
         count++;
     }
 
-    public abstract int bouquet (int total);
 
     public static int getCount() {
         return count;

@@ -1,19 +1,17 @@
 package shop;
 
-import java.util.Collection;
 import java.util.SortedSet;
-import java.util.TreeSet;
 
 /**
  * Created by belkin on 16.06.2017.
  */
 public class Category {
     private String name;
-    private TreeSet<Goods> GoodsSet;
+    private SortedSet<Goods> goodsSet;
 
-    public Category(String name, TreeSet<Goods> goodsSet) {
+    public Category(String name, SortedSet<Goods> goodsSet) {
         this.name = name;
-        GoodsSet = goodsSet;
+        this.goodsSet = goodsSet;
     }
 
     public String getName() {
@@ -25,11 +23,11 @@ public class Category {
     }
 
     public SortedSet<Goods> getGoodsSet() {
-        return GoodsSet;
+        return goodsSet;
     }
 
-    public void setGoodsSet(TreeSet<Goods> goodsSet) {
-        GoodsSet = goodsSet;
+    public void setGoodsSet(SortedSet<Goods> goodsSet) {
+        this.goodsSet = goodsSet;
     }
 
 }

@@ -8,13 +8,7 @@ public class Rose extends Flower {
         super(name, cost, color);
     }
 
-    @Override
-    public int bouquet(int total) {
-        total = total + this.getCost();
-        return total;
-    }
-
-    @Override
+        @Override
     public String toString() {
         return "Rose{} " + super.toString();
     }

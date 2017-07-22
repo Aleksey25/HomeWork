@@ -25,7 +25,6 @@ public class MatricaMain {
                 break;
             case 2:
                 mat1.summ(mat2);
-
                 break;
             default:
                 mat1.print();

@@ -29,19 +29,19 @@ public class FlowerMain {
 
         int summ = 0;
         for (Flower x : b1) {
-            summ = x.bouquet(summ);
+            summ = summ + x.getCost();
         }
         System.out.println("Стоимость букета 1: " + summ);
 
         summ = 0;
         for (Flower x : b2) {
-            summ = x.bouquet(summ);
+            summ = summ + x.getCost();
         }
         System.out.println("Стоимость букета 2: " + summ);
 
         summ = 0;
         for (Flower x : b3) {
-            summ = x.bouquet(summ);
+            summ = summ + x.getCost();
         }
         System.out.println("Стоимость букета 3: " + summ);
 

@@ -41,31 +41,24 @@ public class Matrica {
     }
 
     public void umnog(int x) {
-
         for (int i = 0; i < line; i++) {
             for (i = 0; i < line; i++) {
                 for (int j = 0; j < column; j++)
                     this.matrica[i][j] = this.matrica[i][j] * x;
             }
-            for (i = 0; i < line; i++) {
-                for (int j = 0; j < column; j++) {
-                    System.out.print(this.matrica[i][j] + " ");
-                }
-                System.out.println();
-            }
+            print();
         }
     }
 
     public void summ(Matrica matrica) {
-        for (int i = 0; i < line; i++) {
-            for (int j = 0; j < column; j++)
-                this.matrica[i][j] = this.matrica[i][j] + matrica.matrica[i][j];
-        }
-        for (int i = 0; i < line; i++) {
-            for (int j = 0; j < column; j++) {
-                System.out.print(this.matrica[i][j] + " ");
+        if (matrica.line == this.line && matrica.column == this.column) {
+            for (int i = 0; i < line; i++) {
+                for (int j = 0; j < column; j++)
+                    this.matrica[i][j] = this.matrica[i][j] + matrica.matrica[i][j];
             }
-            System.out.println();
+            print();
+        } else {
+            System.out.println("Матрицы имеют разные размерности");
         }
     }
 

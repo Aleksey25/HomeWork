@@ -10,8 +10,12 @@ import java.util.Comparator;
 public class GoodsComparatorRank implements Comparator<Goods> {
     @Override
     public int compare(Goods o1, Goods o2) {
-        int a = Integer.compare(o1.getRank(),o2.getRank());
-        return a;
+        if (o1.getRank() != o2.getRank()) {
+            return o1.getRank() - o2.getRank();
+        } else {
+            return o1.getName().compareTo(o2.getName());
+        }
     }
-
 }
+
+
